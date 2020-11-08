@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Depth Video View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DepthVideoViewController" customModule="Deep_Inside_Hollywood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v8V-yO-Fnx">
+                                <rect key="frame" x="0.0" y="100" width="375" height="592"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.01" maxValue="0.98999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="YqE-Oh-XQT">
+                                <rect key="frame" x="18" y="705" width="339" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="w6P-6y-PU4"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="z1t-eQ-sDK"/>
+                                </connections>
+                            </slider>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CDy-UW-NNf">
+                                <rect key="frame" x="20" y="743" width="335" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="W3d-3O-z67"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Original"/>
+                                    <segment title="Depth"/>
+                                    <segment title="Mask"/>
+                                    <segment title="Filtered"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="previewModeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="l6r-kx-Kkz"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bwA-pL-sp6">
+                                <rect key="frame" x="20" y="54" width="335" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="sfl-aq-dvA"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Comic"/>
+                                    <segment title="Green Screen"/>
+                                    <segment title="Blur"/>
+                                </segments>
+                                <connections>
+                                    <action selector="filterTypeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="vh6-s2-Onj"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aPC-4g-yxI">
+                                <rect key="frame" x="170" y="629" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startSaving:" destination="BYZ-38-t0r" eventType="touchDown" id="XYn-oT-AvF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CDy-UW-NNf" secondAttribute="trailing" constant="20" id="G9K-mA-GuK"/>
+                            <constraint firstItem="bwA-pL-sp6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GQy-pc-4F4"/>
+                            <constraint firstItem="bwA-pL-sp6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="L5k-JB-s7D"/>
+                            <constraint firstItem="v8V-yO-Fnx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="100" id="Mmw-41-fbf"/>
+                            <constraint firstItem="v8V-yO-Fnx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PZp-gw-PqV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YqE-Oh-XQT" secondAttribute="trailing" constant="20" id="Qjs-be-L9h"/>
+                            <constraint firstItem="YqE-Oh-XQT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VFk-rd-YGN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CDy-UW-NNf" secondAttribute="bottom" constant="7" id="Wwh-SR-R0L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v8V-yO-Fnx" secondAttribute="trailing" id="hoT-gl-Klx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bwA-pL-sp6" secondAttribute="trailing" constant="20" id="jhY-Qc-1GI"/>
+                            <constraint firstItem="CDy-UW-NNf" firstAttribute="top" secondItem="YqE-Oh-XQT" secondAttribute="bottom" constant="8" id="qJ4-Q2-BTI"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="v8V-yO-Fnx" secondAttribute="bottom" constant="120" id="qoe-zB-lLd"/>
+                            <constraint firstItem="CDy-UW-NNf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vHv-3S-cip"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="depthSlider" destination="YqE-Oh-XQT" id="z4v-MD-J8P"/>
+                        <outlet property="filterControl" destination="bwA-pL-sp6" id="1TD-dE-mlw"/>
+                        <outlet property="previewModeControl" destination="CDy-UW-NNf" id="ohM-dC-zcm"/>
+                        <outlet property="previewView" destination="v8V-yO-Fnx" id="iuX-8N-lrA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.251231527093594"/>
+        </scene>
+    </scenes>
+</document>

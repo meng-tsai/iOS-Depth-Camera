@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F4B8792200E926D00DCDAE1 /* CVPixelBufferExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B8791200E926D00DCDAE1 /* CVPixelBufferExtension.swift */; };
+		9F66A308200E7C0C00A0C0D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66A307200E7C0C00A0C0D6 /* AppDelegate.swift */; };
+		9F66A30A200E7C0C00A0C0D6 /* DepthVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66A309200E7C0C00A0C0D6 /* DepthVideoViewController.swift */; };
+		9F66A30D200E7C0C00A0C0D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F66A30B200E7C0C00A0C0D6 /* Main.storyboard */; };
+		9F66A30F200E7C0C00A0C0D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F66A30E200E7C0C00A0C0D6 /* Assets.xcassets */; };
+		9F964EED201160B50088BFCD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F964EEC201160B50088BFCD /* LaunchScreen.xib */; };
+		9FEA97182010CC86006E7128 /* DepthImageFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEA97172010CC86006E7128 /* DepthImageFilters.swift */; };
+		9FEA971D20114DE9006E7128 /* ControlEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEA971C20114DE9006E7128 /* ControlEnums.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9F4B8791200E926D00DCDAE1 /* CVPixelBufferExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVPixelBufferExtension.swift; sourceTree = "<group>"; };
+		9F66A304200E7C0C00A0C0D6 /* Depth Camera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Depth Camera.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F66A307200E7C0C00A0C0D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F66A309200E7C0C00A0C0D6 /* DepthVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthVideoViewController.swift; sourceTree = "<group>"; };
+		9F66A30C200E7C0C00A0C0D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F66A30E200E7C0C00A0C0D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F66A313200E7C0C00A0C0D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F964EEC201160B50088BFCD /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		9FEA97172010CC86006E7128 /* DepthImageFilters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepthImageFilters.swift; sourceTree = "<group>"; };
+		9FEA971C20114DE9006E7128 /* ControlEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlEnums.swift; sourceTree = "<group>"; };
+		BD6C9F1B2555DEFD00C296D4 /* Deep Inside Hollywood copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Deep Inside Hollywood copy-Info.plist"; path = "/Users/ashura1234/Dropbox/Learning/Bootcamp/Computer Vision Project/Deep Inside Hollywood/Deep Inside Hollywood Final/Deep Inside Hollywood copy-Info.plist"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F66A301200E7C0C00A0C0D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F66A2FB200E7C0C00A0C0D6 = {
+			isa = PBXGroup;
+			children = (
+				9F66A306200E7C0C00A0C0D6 /* DepthCapture */,
+				9F66A305200E7C0C00A0C0D6 /* Products */,
+				BD6C9F1B2555DEFD00C296D4 /* Deep Inside Hollywood copy-Info.plist */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		9F66A305200E7C0C00A0C0D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F66A304200E7C0C00A0C0D6 /* Depth Camera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F66A306200E7C0C00A0C0D6 /* DepthCapture */ = {
+			isa = PBXGroup;
+			children = (
+				9FEA971B20114D1D006E7128 /* Extensions */,
+				9F66A307200E7C0C00A0C0D6 /* AppDelegate.swift */,
+				9FEA971C20114DE9006E7128 /* ControlEnums.swift */,
+				9FEA97172010CC86006E7128 /* DepthImageFilters.swift */,
+				9F66A309200E7C0C00A0C0D6 /* DepthVideoViewController.swift */,
+				9F964EEE201160C40088BFCD /* Resources */,
+			);
+			path = DepthCapture;
+			sourceTree = "<group>";
+		};
+		9F964EEE201160C40088BFCD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9F66A30B200E7C0C00A0C0D6 /* Main.storyboard */,
+				9F66A30E200E7C0C00A0C0D6 /* Assets.xcassets */,
+				9F964EEC201160B50088BFCD /* LaunchScreen.xib */,
+				9F66A313200E7C0C00A0C0D6 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9FEA971B20114D1D006E7128 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9F4B8791200E926D00DCDAE1 /* CVPixelBufferExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F66A303200E7C0C00A0C0D6 /* Deep Inside Hollywood */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F66A316200E7C0C00A0C0D6 /* Build configuration list for PBXNativeTarget "Deep Inside Hollywood" */;
+			buildPhases = (
+				9F66A300200E7C0C00A0C0D6 /* Sources */,
+				9F66A301200E7C0C00A0C0D6 /* Frameworks */,
+				9F66A302200E7C0C00A0C0D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Deep Inside Hollywood";
+			productName = "Deep Inside Hollywood";
+			productReference = 9F66A304200E7C0C00A0C0D6 /* Depth Camera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F66A2FC200E7C0C00A0C0D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Ray Wenderlich";
+				TargetAttributes = {
+					9F66A303200E7C0C00A0C0D6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9F66A2FF200E7C0C00A0C0D6 /* Build configuration list for PBXProject "DepthCapture" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F66A2FB200E7C0C00A0C0D6;
+			productRefGroup = 9F66A305200E7C0C00A0C0D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F66A303200E7C0C00A0C0D6 /* Deep Inside Hollywood */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F66A302200E7C0C00A0C0D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F964EED201160B50088BFCD /* LaunchScreen.xib in Resources */,
+				9F66A30F200E7C0C00A0C0D6 /* Assets.xcassets in Resources */,
+				9F66A30D200E7C0C00A0C0D6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F66A300200E7C0C00A0C0D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FEA971D20114DE9006E7128 /* ControlEnums.swift in Sources */,
+				9F66A30A200E7C0C00A0C0D6 /* DepthVideoViewController.swift in Sources */,
+				9F66A308200E7C0C00A0C0D6 /* AppDelegate.swift in Sources */,
+				9F4B8792200E926D00DCDAE1 /* CVPixelBufferExtension.swift in Sources */,
+				9FEA97182010CC86006E7128 /* DepthImageFilters.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9F66A30B200E7C0C00A0C0D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F66A30C200E7C0C00A0C0D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F66A314200E7C0C00A0C0D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F66A315200E7C0C00A0C0D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F66A317200E7C0C00A0C0D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W4G6PH95W2;
+				INFOPLIST_FILE = "$(SRCROOT)/DepthCapture/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AchorageEngineering.com-DepthCapture";
+				PRODUCT_NAME = "Depth Camera";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9F66A318200E7C0C00A0C0D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W4G6PH95W2;
+				INFOPLIST_FILE = "$(SRCROOT)/DepthCapture/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AchorageEngineering.com-DepthCapture";
+				PRODUCT_NAME = "Depth Camera";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F66A2FF200E7C0C00A0C0D6 /* Build configuration list for PBXProject "DepthCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F66A314200E7C0C00A0C0D6 /* Debug */,
+				9F66A315200E7C0C00A0C0D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F66A316200E7C0C00A0C0D6 /* Build configuration list for PBXNativeTarget "Deep Inside Hollywood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F66A317200E7C0C00A0C0D6 /* Debug */,
+				9F66A318200E7C0C00A0C0D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F66A2FC200E7C0C00A0C0D6 /* Project object */;
+}

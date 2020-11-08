@@ -1,4 +1,0 @@
-numpy
-jupyter
-matplotlib
-opencv-python
