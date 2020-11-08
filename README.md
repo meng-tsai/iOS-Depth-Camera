@@ -57,7 +57,7 @@ Open scene/integrated.ply
 ![](https://github.com/ashura1234/iOS-Depth-Camera/blob/main/README_resources/iOSLivingRoomModel.gif?raw=true)
 
 ### Input from Realsense D435 camera
-![](https://github.com/ashura1234/iOS-Depth-Camera/blob/main/README_resources/RealsenseLivingRoom.gif?raw=true))
+![](https://github.com/ashura1234/iOS-Depth-Camera/blob/main/README_resources/RealsenseLivingRoom.gif?raw=true)
 
 ### Output Model
 
@@ -73,5 +73,5 @@ Realsense camera has better depth precision, but it is still not precise enough 
 - Add support of Kinect and iPhone 12 LiDAR camera
 - Fine tuning parameters for loop closure
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3ODYzNTAxOV19
+eyJoaXN0b3J5IjpbLTE1MzkzMTgwMTBdfQ==
 -->
