@@ -50,7 +50,7 @@ python realsense_recorder.py --record_imgs
 Open scene/integrated.ply
 
 ### Input from iPhone Dual Wide Camera
-![](https://github.com/ashura1234/iOS-Depth-Camera/blob/main/README_resources/iOSLivingRoom.gif?raw=true))
+![](https://github.com/ashura1234/iOS-Depth-Camera/blob/main/README_resources/iOSLivingRoom.gif?raw=true)
 
 ### Output Model
 
@@ -73,5 +73,5 @@ Realsense camera has better depth precision, but it is still not precise enough 
 - Add support of Kinect and iPhone 12 LiDAR camera
 - Fine tuning parameters for loop closure
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MjYxMzUwNl19
+eyJoaXN0b3J5IjpbMTQ3ODYzNTAxOV19
 -->
