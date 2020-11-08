@@ -2,7 +2,7 @@
 # Scene Reconstruction Using iOS Dual Camera
 - Reconstructed the indoor scenes by transforming the depth images into point cloud models
 - Making local scene fragments, registering (aligned) different fragments, and finally integrated fragments into meshes utilizing Open3D scene reconstruction pipeline.
-- Capture RGB-D images using Realsense D435 and iPhone
+- Capture RGB-D images using Realsense D435 and iPhone dual wide camera
 
 ## Environment
 - python 3.6.12
